@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterMovieActivity"
+    android:background="@drawable/register_movie_background">
+
+    <EditText
+        android:id="@+id/movie_title_et"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:hint="@string/title_of_movie_hint"
+        android:autofillHints=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/movie_year_et"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/movie_title_et"
+        android:layout_marginTop="20dp"
+        android:hint="@string/movie_produced_year_hint"
+        android:autofillHints=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/movie_director_et"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/movie_year_et"
+        android:layout_marginTop="20dp"
+        android:hint="@string/director_of_the_movie_hint"
+        android:autofillHints=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/actor_list_et"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/movie_director_et"
+        android:layout_marginTop="20dp"
+        android:hint="@string/actors_in_the_movie_hint"
+        android:autofillHints=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/rating_et"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/actor_list_et"
+        android:layout_marginTop="20dp"
+        android:hint="@string/movie_rating_hint"
+        android:autofillHints=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/review_et"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rating_et"
+        android:layout_marginTop="20dp"
+        android:hint="@string/movie_review_hint"
+        android:autofillHints=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_btnText"
+        android:onClick="saveData"
+        android:layout_below="@+id/review_et"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/white" />
+
+
+</RelativeLayout>

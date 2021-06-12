@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:background="@drawable/main_background">
+
+    <TextView
+        android:id="@+id/main_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="@string/main_topic"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/register_movie_btn"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="sans-serif"
+        android:onClick="register"
+        android:text="@string/register_movie_btnText"
+        android:textAllCaps="false"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/display_movie_btn"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="@string/display_movies_btn_Text"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/register_movie_btn"
+        android:onClick="display"/>
+
+    <Button
+        android:id="@+id/favourites_btn"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="@string/favourites_btnText"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/display_movie_btn"
+        android:onClick="viewFavourites"/>
+
+    <Button
+        android:id="@+id/edit_movies_btn"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_movies_btnText"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/favourites_btn"
+        android:onClick="editMovies"/>
+
+
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="@string/search_btnText"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edit_movies_btn"
+        android:onClick="searchAll" />
+
+
+
+    <Button
+        android:id="@+id/ratings_btn"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ratings_btnText"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/search_btn"
+        android:onClick="ratings"/>
+
+</RelativeLayout>

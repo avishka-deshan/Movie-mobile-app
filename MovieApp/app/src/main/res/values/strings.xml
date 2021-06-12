@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="register_movie_btnText">Register Movie</string>
+    <string name="display_movies_btn_Text">Display Movies</string>
+    <string name="favourites_btnText">Favourites</string>
+    <string name="edit_movies_btnText">Edit Movies</string>
+    <string name="search_btnText">Search</string>
+    <string name="ratings_btnText">Ratings</string>
+    <string name="save_btnText">Save</string>
+    <string name="title_of_movie_hint">Movie Title</string>
+    <string name="movie_produced_year_hint">Produced year</string>
+    <string name="director_of_the_movie_hint">Director</string>
+    <string name="actors_in_the_movie_hint">Actors</string>
+    <string name="movie_rating_hint">Rating (1–10)</string>
+    <string name="movie_review_hint">Review</string>
+    <string name="add_to_favourites_btnText">Add to Favourites</string>
+    <string name="search_editText_Text">Type a word to search</string>
+    <string name="search_button_txt">Search</string>
+    <string name="main_topic">Movies</string>
+    <string name="image_cd">TODO</string>
+    <string name="find_movie_in_imdb">Find movie in IMDB</string>
+    <string name="save_text">Save</string>
+</resources>
